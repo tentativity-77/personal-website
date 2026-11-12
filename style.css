@@ -1,0 +1,16 @@
+body {
+    position: relative;
+    background-image: url('https://s3-ap-southeast-1.amazonaws.com/www.xinlintan.com/skyline.JPG');
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+    opacity: 1;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.content{
+    max-width: 480px;
+    padding: 0 20px;
+    display: block;
+    margin: 15% auto 0;
+    color: #D7E4E2;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
