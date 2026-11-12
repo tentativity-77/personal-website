@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Tan Xin Lin</title>
+<meta name="description" content="Side projects by Tan Xin Lin, including a GraphRAG pipeline and a dive site agent.">
+
+<!-- MIXPANEL: paste your Mixpanel snippet here (the <script> block from your
+     old page), followed by:  <script src="mixpanel.js"></script>
+     and keep mixpanel.js in the repo next to this file. -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-projects">
+
+<div class="progress" aria-hidden="true"></div>
+
+<!-- Depth gauge: --d is this page's position (0 to 5), shared across pages so it glides -->
+<div class="gauge" aria-hidden="true"><i style="--d: 4" data-depth="32 m"></i></div>
+
+<nav class="nav" aria-label="Main">
+  <a href="index.html">Home</a>
+  <a href="expertise.html">Expertise</a>
+  <a href="career.html">Career</a>
+  <a href="about.html">About</a>
+  <a href="projects.html" aria-current="page">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Things I’ve built</h1>
+
+  <ul class="projects" id="project-list">
+    <li>
+      <button class="project" data-project="graphrag">
+        <h3>GraphRAG pipeline</h3>
+        <span>Question answering over a knowledge graph, with evaluation scores that show where it gets things wrong.</span>
+      </button>
+    </li>
+    <li>
+      <button class="project" data-project="dive">
+        <h3>Dive site agent</h3>
+        <span>An agent that recommends where to dive next, and checks with me before it commits to anything.</span>
+      </button>
+    </li>
+  </ul>
+
+  <article class="detail" id="project-detail" hidden>
+    <button class="back" id="project-back">Back to all projects</button>
+    <h2 id="detail-title" tabindex="-1"></h2>
+    <p id="detail-body"></p>
+    <dl>
+      <dt>Built with</dt><dd id="detail-stack"></dd>
+      <dt>Status</dt><dd id="detail-status"></dd>
+      <dt>Code</dt><dd id="detail-link"></dd>
+    </dl>
+  </article>
+
+  <p><a class="next" href="contact.html">Next: Contact</a></p>
+</main>
+
+<script src="site.js"></script>
+</body>
+</html>
